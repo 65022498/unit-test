@@ -27,4 +27,44 @@ class QuizOneJunitTest {
 		Assert.assertEquals(expect, result);
 	}
 
+	@Test
+	void testB1() {
+		String input = "NEW YEAR";
+		int expect = 1;
+		int result = quiz.countLetterA(input);
+		Assert.assertEquals(expect, result);
+	}
+	
+	@Test
+	void testB2() {
+		String input = "I AM Happy";
+		int expect = 2;
+		int result = quiz.countLetterA(input);
+		Assert.assertEquals(expect, result);
+	}
+	
+	@Test
+	void testB3() {
+		String input = "2024";
+		int expect = 0;
+		int result = quiz.countLetterA(input);
+		Assert.assertEquals(expect, result);
+	}
+	
+	@Test
+	void testB4() {
+		String input = "2024";
+		int expect = 0;
+		int result = quiz.countLetterA(input);
+		Assert.assertEquals(expect, result);
+	}
+	
+	@Test
+	void testB5() {
+		String input = "";
+		int expect = 0;
+		int result = quiz.countLetterA(input);
+		Assert.assertEquals(expect, result);
+	}
+
 }
