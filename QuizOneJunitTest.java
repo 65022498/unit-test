@@ -67,4 +67,52 @@ class QuizOneJunitTest {
 		Assert.assertEquals(expect, result);
 	}
 
+	@Test
+	void testC1() {
+		String input = "A";
+		Boolean expect = false;
+		Boolean result = quiz.checkTwoLetter(input);
+		Assert.assertEquals(expect, result);
+	}
+
+	@Test
+	void testC2() {
+		String input = "AB";
+		Boolean expect = true;
+		Boolean result = quiz.checkTwoLetter(input);
+		Assert.assertEquals(expect, result);
+	}
+
+	@Test
+	void testC3() {
+		String input = "Hello";
+		Boolean expect = false;
+		Boolean result = quiz.checkTwoLetter(input);
+		Assert.assertEquals(expect, result);
+	}
+	
+	@Test
+	void testC4() {
+		String input = "coco";
+		Boolean expect = true;
+		Boolean result = quiz.checkTwoLetter(input);
+		Assert.assertEquals(expect, result);
+	}
+
+	@Test
+	void testC5() {
+		String input = "kiki";
+		Boolean expect = true;
+		Boolean result = quiz.checkTwoLetter(input);
+		Assert.assertEquals(expect, result);
+	}
+	
+	@Test
+	void testC6() {
+		String input = "kiekie";
+		Boolean expect = false;
+		Boolean result = quiz.checkTwoLetter(input);
+		Assert.assertEquals(expect, result);
+	}
+
 }
